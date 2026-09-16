@@ -1,0 +1,32 @@
+{
+  "name": "regulatory-roadmap-compliance-engine",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Regulatory Roadmap & Compliance Engineering Module (SPEC v2) — technisches Steuerungs- und Vorbereitungssystem, keine Rechtsberatung.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate": "tsx scripts/validate.ts",
+    "reports": "tsx scripts/generate-reports.ts",
+    "check": "npm run typecheck && npm run validate && npm run test"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "axe-core": "^4.13.0",
+    "jsdom": "^30.0.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.1"
+  }
+}
