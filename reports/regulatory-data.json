@@ -1,0 +1,2035 @@
+{
+  "meta": {
+    "spec": "SPEC v2 — Regulatory Roadmap & Compliance Engineering Module",
+    "generatedAt": "2026-09-16T00:00:00.000Z",
+    "referenceDate": "2026-09-16",
+    "timeZone": "Europe/Berlin",
+    "projectProfileId": "profile-demo-shop",
+    "disclaimer": "Kein Rechtsrat. Technisches Steuerungsdokument; alle regulatorischen Angaben sind Arbeitsstand und an die referenzierten SourceRecords gebunden."
+  },
+  "legalActs": [
+    {
+      "id": "act-bfsg",
+      "slug": "BFSG",
+      "name": "Barrierefreiheitsstärkungsgesetz",
+      "shortName": "BFSG",
+      "jurisdiction": "EU+DE",
+      "legalBasis": "Umsetzung der Richtlinie (EU) 2019/882",
+      "sourceRecords": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "lifecycleState": "applicable",
+      "effectiveDate": "2025-06-28",
+      "applicableDate": "2025-06-28",
+      "transitionPeriod": "§ 38 BFSG: Übergangsbestimmungen ausschließlich für vor dem 28.06.2025 rechtmäßig eingesetzte Produkte und Bestandsverträge (längstens bis 27.06.2030) sowie Selbstbedienungsterminals (bis zu 15 Jahre). Für Neuprojekte besteht keine Übergangsfrist — deshalb ist kein transitionEnd gesetzt (§9.5.3).",
+      "reviewStatus": "draft",
+      "summary": "Barrierefreiheitsanforderungen an Produkte und Dienstleistungen, für Webprojekte insbesondere an elektronischen Geschäftsverkehr und Dienstleistungswebsites."
+    },
+    {
+      "id": "act-eu-ai-act",
+      "slug": "EU_AI_ACT",
+      "name": "Verordnung (EU) 2024/1689 über künstliche Intelligenz",
+      "shortName": "AI Act",
+      "jurisdiction": "EU",
+      "legalBasis": "Verordnung (EU) 2024/1689",
+      "sourceRecords": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "lifecycleState": "applicable",
+      "effectiveDate": "2024-08-01",
+      "applicableDate": "2026-08-02",
+      "transitionPeriod": "Gestaffelte Anwendbarkeit nach Art. 113. Für dieses Modul maßgeblich: Art. 50 (Transparenzpflichten) ab 02.08.2026. Weitere Stufen betreffen Hochrisiko-Kategorien und sind für ein Webprojekt ohne Hochrisiko-System nicht einschlägig — daher kein transitionEnd (§9.5.3).",
+      "reviewStatus": "needs_legal_review",
+      "summary": "Transparenzpflichten für KI-Interaktion und synthetische Inhalte. ACHTUNG: Die Arbeitsstand-Angabe aus SPEC §5.2 (Art. 50 seit August 2025) wurde durch die Gegenprüfung nicht bestätigt."
+    },
+    {
+      "id": "act-eu-data-act",
+      "slug": "EU_DATA_ACT",
+      "name": "Verordnung (EU) 2023/2854 über fairen Datenzugang und faire Datennutzung",
+      "shortName": "Data Act",
+      "jurisdiction": "EU",
+      "legalBasis": "Verordnung (EU) 2023/2854",
+      "sourceRecords": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "lifecycleState": "applicable",
+      "effectiveDate": "2024-01-11",
+      "applicableDate": "2025-09-12",
+      "transitionEnd": "2026-09-12",
+      "transitionPeriod": "Geltungsbeginn 12.09.2025. Art. 3 Abs. 1 (Access by Design) greift für vernetzte Produkte, die ab dem 12.09.2026 in Verkehr gebracht werden — dieses Datum ist als transitionEnd gesetzt.",
+      "reviewStatus": "draft",
+      "summary": "Datenzugangs-, Portabilitäts- und Transparenzpflichten. Reichweite für Webprojekte ohne vernetztes Produkt ist auslegungsbedürftig."
+    }
+  ],
+  "sourceRecords": [
+    {
+      "id": "src-bfsg-eu-dir-2019-882",
+      "sourceSystem": "EUR-Lex",
+      "documentType": "directive",
+      "officialIdentifier": "Richtlinie (EU) 2019/882",
+      "title": "Richtlinie (EU) 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen",
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj",
+      "publicationDate": "2019-06-07",
+      "retrievedAt": "2026-09-16",
+      "confidence": "medium",
+      "notes": "Gegenprüfung über Sekundärrecherche auf die amtliche Fundstelle; direkter Abruf des Primärtexts in der Erstellungsumgebung durch Netzwerk-Policy blockiert. Direktprüfung offen."
+    },
+    {
+      "id": "src-bfsg-bgbl-2021-2970",
+      "sourceSystem": "BGBl",
+      "documentType": "official_publication",
+      "officialIdentifier": "BGBl. I 2021 S. 2970",
+      "title": "Gesetz zur Umsetzung der Richtlinie (EU) 2019/882 (Barrierefreiheitsstärkungsgesetz — BFSG), verkündet am 16.07.2021",
+      "url": "https://www.gesetze-im-internet.de/bfsg/",
+      "publicationDate": "2021-07-16",
+      "retrievedAt": "2026-09-16",
+      "confidence": "medium",
+      "notes": "Gegenprüfung über Sekundärrecherche auf die amtliche Fundstelle; direkter Abruf des Primärtexts in der Erstellungsumgebung durch Netzwerk-Policy blockiert. Direktprüfung offen. Geprüfte Angaben: Inkrafttreten 28.06.2025; § 38 BFSG Übergangsbestimmungen nur für Bestandsprodukte/-verträge bis längstens 27.06.2030 sowie Selbstbedienungsterminals bis zu 15 Jahre."
+    },
+    {
+      "id": "src-eu-ai-act-reg-2024-1689",
+      "sourceSystem": "EUR-Lex",
+      "documentType": "regulation",
+      "officialIdentifier": "Verordnung (EU) 2024/1689",
+      "title": "Verordnung (EU) 2024/1689 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "publicationDate": "2024-07-12",
+      "retrievedAt": "2026-09-16",
+      "confidence": "medium",
+      "notes": "Gegenprüfung über Sekundärrecherche auf die amtliche Fundstelle; direkter Abruf des Primärtexts in der Erstellungsumgebung durch Netzwerk-Policy blockiert. Direktprüfung offen. Geprüfte Angaben: Inkrafttreten 01.08.2024; gestaffelte Anwendbarkeit nach Art. 113; Art. 50 (Transparenzpflichten) ab 02.08.2026. Die Angabe aus SPEC §5.2 (\"Art. 50 seit August 2025\") wurde dadurch nicht bestätigt."
+    },
+    {
+      "id": "src-eu-data-act-reg-2023-2854",
+      "sourceSystem": "EUR-Lex",
+      "documentType": "regulation",
+      "officialIdentifier": "Verordnung (EU) 2023/2854",
+      "title": "Verordnung (EU) 2023/2854 über harmonisierte Vorschriften für einen fairen Datenzugang und eine faire Datennutzung (Data Act)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/2854/oj",
+      "publicationDate": "2023-12-22",
+      "retrievedAt": "2026-09-16",
+      "confidence": "medium",
+      "notes": "Gegenprüfung über Sekundärrecherche auf die amtliche Fundstelle; direkter Abruf des Primärtexts in der Erstellungsumgebung durch Netzwerk-Policy blockiert. Direktprüfung offen. Geprüfte Angaben: Inkrafttreten 11.01.2024; Geltungsbeginn 12.09.2025 nach Art. 50; Art. 3 Abs. 1 für ab dem 12.09.2026 in Verkehr gebrachte vernetzte Produkte."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "obl-bfsg-accessibility-statement",
+      "legalActId": "act-bfsg",
+      "title": "Informationen zur Barrierefreiheit öffentlich zugänglich bereitstellen",
+      "description": "Der Dienstleistungserbringer muss die Informationen nach Anlage 3 Nr. 1 BFSG erstellen und in barrierefreier Form öffentlich zugänglich machen (in der Praxis: Barrierefreiheitserklärung, typischerweise über den Footer erreichbar).",
+      "normReference": "§ 14 Abs. 1 Nr. 2 BFSG i. V. m. Anlage 3 Nr. 1 BFSG",
+      "sourceRecords": [
+        "src-bfsg-bgbl-2021-2970"
+      ],
+      "affectedLayers": [
+        "frontend",
+        "content",
+        "legal"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": true,
+      "requiresEvidence": true,
+      "needsLegalReview": false
+    },
+    {
+      "id": "obl-bfsg-wcag-conformance",
+      "legalActId": "act-bfsg",
+      "title": "Barrierefreiheitsanforderungen an die Dienstleistung technisch erfüllen",
+      "description": "Wahrnehmbarkeit, Bedienbarkeit, Verständlichkeit und Robustheit der digitalen Dienstleistung. Die Konkretisierung erfolgt über die BFSGV und die harmonisierten Normen; die genaue Konformitätsstufe (Arbeitsstand §5.1: WCAG 2.1 AA) ist rechtlich zu bestätigen.",
+      "normReference": "§ 3 BFSG i. V. m. BFSGV",
+      "sourceRecords": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "affectedLayers": [
+        "frontend",
+        "content"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": false,
+      "requiresEvidence": true,
+      "needsLegalReview": true
+    },
+    {
+      "id": "obl-bfsg-feedback-channel",
+      "legalActId": "act-bfsg",
+      "title": "Feedback- und Kontaktmechanismus zur Barrierefreiheit bereitstellen",
+      "description": "Rückmeldemöglichkeit zu Barrieren und alternative Zugangswege. Die genaue Ausgestaltung und die Verortung der Pflicht sind zu bestätigen.",
+      "normReference": "Richtlinie (EU) 2019/882, Anhang I Abschnitt III (Umsetzung über BFSG/BFSGV)",
+      "sourceRecords": [
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "affectedLayers": [
+        "frontend",
+        "operations"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": false,
+      "requiresEvidence": true,
+      "needsLegalReview": true
+    },
+    {
+      "id": "obl-ai-act-interaction-disclosure",
+      "legalActId": "act-eu-ai-act",
+      "title": "Offenlegung der KI-Interaktion gegenüber natürlichen Personen",
+      "description": "Nutzerinnen und Nutzer müssen erkennen können, dass sie mit einem KI-System interagieren — rechtzeitig, deutlich und vor der Interaktion.",
+      "normReference": "Art. 50 Abs. 1 VO (EU) 2024/1689",
+      "sourceRecords": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "affectedLayers": [
+        "frontend",
+        "content",
+        "legal"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": true,
+      "requiresEvidence": true,
+      "needsLegalReview": false
+    },
+    {
+      "id": "obl-ai-act-synthetic-content",
+      "legalActId": "act-eu-ai-act",
+      "title": "Kennzeichnung synthetisch erzeugter Inhalte",
+      "description": "Maschinenlesbare Markierung und wahrnehmbare Kennzeichnung KI-generierter Inhalte.",
+      "normReference": "Art. 50 Abs. 2 und Abs. 4 VO (EU) 2024/1689",
+      "sourceRecords": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "affectedLayers": [
+        "frontend",
+        "backend",
+        "content"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": true,
+      "requiresEvidence": true,
+      "needsLegalReview": false
+    },
+    {
+      "id": "obl-ai-act-system-inventory",
+      "legalActId": "act-eu-ai-act",
+      "title": "KI-Systeminventar und Nachvollziehbarkeit vorbereiten",
+      "description": "Vorbereitungsmaßnahme ohne eigenständige Norm: ohne Inventar der eingesetzten KI-Funktionen ist weder die Rollenzuordnung (Anbieter/Betreiber) noch der Pflichtenumfang bestimmbar.",
+      "normReference": "Vorbereitungsmaßnahme zu Art. 50 VO (EU) 2024/1689 — keine eigenständige Norm",
+      "sourceRecords": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "affectedLayers": [
+        "backend",
+        "operations",
+        "legal"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": false,
+      "requiresEvidence": true,
+      "needsLegalReview": true
+    },
+    {
+      "id": "obl-data-act-transparency-information",
+      "legalActId": "act-eu-data-act",
+      "title": "Transparenz über Datenerhebung, Datenspeicherung und Datenzugriff",
+      "description": "Informationen darüber, welche Daten erzeugt, gespeichert und zugänglich gemacht werden. Für Projekte ohne vernetztes Produkt ist die Reichweite auslegungsbedürftig.",
+      "normReference": "Art. 3 Abs. 2 VO (EU) 2023/2854",
+      "sourceRecords": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "affectedLayers": [
+        "frontend",
+        "content",
+        "data",
+        "legal"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": true,
+      "requiresEvidence": true,
+      "needsLegalReview": true
+    },
+    {
+      "id": "obl-data-act-access-portability",
+      "legalActId": "act-eu-data-act",
+      "title": "Datenzugang und Datenportabilität ermöglichen",
+      "description": "Zugriff auf und Übertragbarkeit von Nutzungsdaten in einem strukturierten, gängigen und maschinenlesbaren Format.",
+      "normReference": "Art. 4 und Art. 5 VO (EU) 2023/2854",
+      "sourceRecords": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "affectedLayers": [
+        "backend",
+        "data"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": false,
+      "requiresEvidence": true,
+      "needsLegalReview": true
+    },
+    {
+      "id": "obl-data-act-third-party-sharing",
+      "legalActId": "act-eu-data-act",
+      "title": "Weitergabe an Dritte dokumentieren und steuern",
+      "description": "Register der Datenempfänger, Zwecke und Rechtsgrundlagen der Weitergabe.",
+      "normReference": "Art. 5 und Art. 6 VO (EU) 2023/2854",
+      "sourceRecords": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "affectedLayers": [
+        "backend",
+        "data",
+        "operations"
+      ],
+      "lifecycleState": "applicable",
+      "actionableNow": true,
+      "prepareArchitectureOnly": false,
+      "requiresLegalText": false,
+      "requiresEvidence": true,
+      "needsLegalReview": true
+    }
+  ],
+  "complianceControls": [
+    {
+      "id": "ctl-bfsg-statement-slot",
+      "obligationId": "obl-bfsg-accessibility-statement",
+      "title": "Footer-Slot AccessibilityStatement (View auf LegalTextSlot)",
+      "controlType": "ui_component",
+      "targetModule": "src/ui/slots.tsx#AccessibilityStatementSlot",
+      "implementationState": "prepared",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": true,
+      "ownerRole": "frontend",
+      "notes": "Rendert ausschließlich über LegalTextRenderer; kein eigener Status (§11.1)."
+    },
+    {
+      "id": "ctl-bfsg-a11y-structure",
+      "obligationId": "obl-bfsg-wcag-conformance",
+      "title": "Semantische Struktur, Fokus-Management und Formular-Labels",
+      "controlType": "accessibility_structure",
+      "targetModule": "src/ui",
+      "implementationState": "in_progress",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-bfsg-a11y-test-setup",
+      "obligationId": "obl-bfsg-wcag-conformance",
+      "title": "Accessibility-Test-Setup (axe-core, Fokusreihenfolge, Tastatur)",
+      "controlType": "test",
+      "targetModule": "tests/accessibility.test.tsx",
+      "implementationState": "prepared",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-bfsg-media-alternatives",
+      "obligationId": "obl-bfsg-wcag-conformance",
+      "title": "Media-Alternativen (Untertitel, Transkripte, Textalternativen)",
+      "controlType": "workflow",
+      "targetModule": "content-pipeline",
+      "implementationState": "not_started",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "content"
+    },
+    {
+      "id": "ctl-bfsg-feedback-channel",
+      "obligationId": "obl-bfsg-feedback-channel",
+      "title": "Feedback- und Kontaktmechanismus zur Barrierefreiheit",
+      "controlType": "ui_component",
+      "targetModule": "src/ui/slots.tsx#AccessibilityStatementSlot",
+      "implementationState": "not_started",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-ai-act-disclosure-slot",
+      "obligationId": "obl-ai-act-interaction-disclosure",
+      "title": "Disclosure-Slot für KI-Hinweis (View auf LegalTextSlot)",
+      "controlType": "ui_component",
+      "targetModule": "src/ui/slots.tsx#AiDisclosureNotice",
+      "implementationState": "prepared",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": true,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-ai-act-pre-interaction-notice",
+      "obligationId": "obl-ai-act-interaction-disclosure",
+      "title": "Vorinteraktiver Hinweis im Chat-Einstieg",
+      "controlType": "disclosure_notice",
+      "targetModule": "src/ui/slots.tsx#AiDisclosureNotice",
+      "implementationState": "not_started",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": true,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-ai-act-content-marking",
+      "obligationId": "obl-ai-act-synthetic-content",
+      "title": "Kennzeichnung synthetischer Inhalte (wahrnehmbar und maschinenlesbar)",
+      "controlType": "disclosure_notice",
+      "targetModule": "content-pipeline",
+      "implementationState": "not_started",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": true,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-ai-act-system-inventory",
+      "obligationId": "obl-ai-act-system-inventory",
+      "title": "Inventar der eingesetzten KI-Funktionen",
+      "controlType": "documentation",
+      "targetModule": "docs/ai-inventory.md",
+      "implementationState": "in_progress",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "compliance"
+    },
+    {
+      "id": "ctl-ai-act-interaction-log",
+      "obligationId": "obl-ai-act-system-inventory",
+      "title": "Logging der KI-Interaktionen als Nachweisstruktur",
+      "controlType": "audit_log",
+      "targetModule": "backend/logging",
+      "implementationState": "not_started",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "backend"
+    },
+    {
+      "id": "ctl-data-act-transparency-slot",
+      "obligationId": "obl-data-act-transparency-information",
+      "title": "Transparenz-Slot Datennutzung (View auf LegalTextSlot)",
+      "controlType": "ui_component",
+      "targetModule": "src/ui/slots.tsx#DataTransparencyNotice",
+      "implementationState": "prepared",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": true,
+      "ownerRole": "frontend"
+    },
+    {
+      "id": "ctl-data-act-dataflow-documentation",
+      "obligationId": "obl-data-act-transparency-information",
+      "title": "Datenflussdokumentation (Kategorien, Speicherorte, Empfänger)",
+      "controlType": "documentation",
+      "targetModule": "docs/data-flows.md",
+      "implementationState": "in_progress",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "data"
+    },
+    {
+      "id": "ctl-data-act-access-export",
+      "obligationId": "obl-data-act-access-portability",
+      "title": "Datenzugriff und Export in maschinenlesbarem Format",
+      "controlType": "workflow",
+      "targetModule": "backend/export",
+      "implementationState": "not_started",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "backend"
+    },
+    {
+      "id": "ctl-data-act-sharing-register",
+      "obligationId": "obl-data-act-third-party-sharing",
+      "title": "Register der Third-Party-Datenweitergaben",
+      "controlType": "data_transparency",
+      "targetModule": "backend/data-sharing",
+      "implementationState": "blocked",
+      "dependsOnPublication": false,
+      "dependsOnLegalText": false,
+      "ownerRole": "data",
+      "notes": "Blockiert: Empfängerliste und Zweckbindung sind ohne abgeschlossene Datenflussdokumentation nicht bestimmbar."
+    }
+  ],
+  "implementationTasks": [
+    {
+      "id": "task-bfsg-statement-slot",
+      "complianceControlId": "ctl-bfsg-statement-slot",
+      "title": "Footer-Slot anlegen und Platzhalter maschinenlesbar markieren",
+      "priority": "high",
+      "state": "update_legal_text",
+      "legalSourceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "needsLegalReview": true,
+      "outputArtifacts": [
+        "src/ui/slots.tsx"
+      ]
+    },
+    {
+      "id": "task-bfsg-a11y-structure",
+      "complianceControlId": "ctl-bfsg-a11y-structure",
+      "title": "Landmarks, Überschriftenhierarchie, Fokus-States und Labels umsetzen",
+      "priority": "high",
+      "state": "implement",
+      "legalSourceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "needsLegalReview": false
+    },
+    {
+      "id": "task-bfsg-a11y-tests",
+      "complianceControlId": "ctl-bfsg-a11y-test-setup",
+      "title": "axe-core-Baseline, Fokusreihenfolge- und Tastaturtests einrichten",
+      "priority": "high",
+      "state": "test",
+      "legalSourceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "needsLegalReview": false,
+      "outputArtifacts": [
+        "tests/accessibility.test.tsx"
+      ]
+    },
+    {
+      "id": "task-bfsg-media-alternatives",
+      "complianceControlId": "ctl-bfsg-media-alternatives",
+      "title": "Redaktionsprozess für Untertitel, Transkripte und Textalternativen aufsetzen",
+      "priority": "medium",
+      "state": "prepare_architecture",
+      "legalSourceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "needsLegalReview": false
+    },
+    {
+      "id": "task-bfsg-feedback-channel",
+      "complianceControlId": "ctl-bfsg-feedback-channel",
+      "title": "Feedback-Mechanismus und alternative Zugangswege konzipieren",
+      "priority": "medium",
+      "state": "prepare_architecture",
+      "legalSourceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ],
+      "needsLegalReview": true
+    },
+    {
+      "id": "task-ai-disclosure-slot",
+      "complianceControlId": "ctl-ai-act-disclosure-slot",
+      "title": "Disclosure-Slot und Platzierung (chat/contextual) vorbereiten",
+      "priority": "high",
+      "state": "update_legal_text",
+      "legalSourceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "needsLegalReview": true,
+      "outputArtifacts": [
+        "src/ui/slots.tsx"
+      ]
+    },
+    {
+      "id": "task-ai-pre-interaction-notice",
+      "complianceControlId": "ctl-ai-act-pre-interaction-notice",
+      "title": "Vorinteraktiven Hinweis im Chat-Einstieg vorbereiten",
+      "priority": "high",
+      "state": "prepare_architecture",
+      "legalSourceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "needsLegalReview": true
+    },
+    {
+      "id": "task-ai-content-marking",
+      "complianceControlId": "ctl-ai-act-content-marking",
+      "title": "Wahrnehmbare und maschinenlesbare Kennzeichnung synthetischer Inhalte vorbereiten",
+      "priority": "high",
+      "state": "prepare_architecture",
+      "legalSourceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "needsLegalReview": true
+    },
+    {
+      "id": "task-ai-system-inventory",
+      "complianceControlId": "ctl-ai-act-system-inventory",
+      "title": "KI-Funktionen inventarisieren und Rollen (Anbieter/Betreiber) klären",
+      "priority": "high",
+      "state": "review",
+      "legalSourceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "needsLegalReview": true
+    },
+    {
+      "id": "task-ai-interaction-log",
+      "complianceControlId": "ctl-ai-act-interaction-log",
+      "title": "Logging-Struktur für KI-Interaktionen entwerfen",
+      "priority": "medium",
+      "state": "prepare_architecture",
+      "legalSourceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ],
+      "needsLegalReview": false
+    },
+    {
+      "id": "task-data-transparency-slot",
+      "complianceControlId": "ctl-data-act-transparency-slot",
+      "title": "Transparenz-Slot für Datennutzungshinweise vorbereiten",
+      "priority": "medium",
+      "state": "update_legal_text",
+      "legalSourceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "needsLegalReview": true,
+      "outputArtifacts": [
+        "src/ui/slots.tsx"
+      ]
+    },
+    {
+      "id": "task-data-flow-documentation",
+      "complianceControlId": "ctl-data-act-dataflow-documentation",
+      "title": "Datenkategorien, Speicherorte und Empfänger dokumentieren",
+      "priority": "medium",
+      "state": "implement",
+      "legalSourceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "needsLegalReview": true
+    },
+    {
+      "id": "task-data-access-export",
+      "complianceControlId": "ctl-data-act-access-export",
+      "title": "Export- und Zugriffsschnittstelle entwerfen",
+      "priority": "medium",
+      "state": "prepare_architecture",
+      "legalSourceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "needsLegalReview": true
+    },
+    {
+      "id": "task-data-sharing-register",
+      "complianceControlId": "ctl-data-act-sharing-register",
+      "title": "Register der Datenweitergaben aufbauen",
+      "priority": "medium",
+      "state": "blocked",
+      "legalSourceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ],
+      "needsLegalReview": true
+    }
+  ],
+  "legalTextSlots": [
+    {
+      "id": "slot-bfsg-accessibility-statement",
+      "obligationId": "obl-bfsg-accessibility-statement",
+      "slotKey": "bfsg.accessibility_statement",
+      "placement": "footer",
+      "textSource": "not_set",
+      "status": "empty"
+    },
+    {
+      "id": "slot-eu-ai-act-disclosure-notice",
+      "obligationId": "obl-ai-act-interaction-disclosure",
+      "slotKey": "eu_ai_act.disclosure_notice",
+      "placement": "chat",
+      "textSource": "not_set",
+      "status": "empty"
+    },
+    {
+      "id": "slot-eu-ai-act-synthetic-content-notice",
+      "obligationId": "obl-ai-act-synthetic-content",
+      "slotKey": "eu_ai_act.synthetic_content_notice",
+      "placement": "contextual",
+      "textSource": "not_set",
+      "status": "empty"
+    },
+    {
+      "id": "slot-eu-data-act-transparency-notice",
+      "obligationId": "obl-data-act-transparency-information",
+      "slotKey": "eu_data_act.transparency_notice",
+      "placement": "settings",
+      "textSource": "not_set",
+      "status": "empty"
+    }
+  ],
+  "evidenceArtifacts": [
+    {
+      "id": "ev-bfsg-axe-baseline",
+      "obligationId": "obl-bfsg-wcag-conformance",
+      "complianceControlId": "ctl-bfsg-a11y-test-setup",
+      "type": "accessibility_report",
+      "reference": "tests/accessibility.test.tsx (axe-core Baseline der Beispielkomponenten)",
+      "createdAt": "2026-09-16",
+      "createdBy": "agent",
+      "status": "collected"
+    },
+    {
+      "id": "ev-ai-inventory-draft",
+      "obligationId": "obl-ai-act-system-inventory",
+      "complianceControlId": "ctl-ai-act-system-inventory",
+      "type": "process_documentation",
+      "reference": "docs/ai-inventory.md (Entwurf)",
+      "createdAt": "2026-09-16",
+      "createdBy": "agent",
+      "status": "collected"
+    }
+  ],
+  "auditEntries": [
+    {
+      "id": "audit-0001",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "project_profile",
+      "targetId": "profile-demo-shop",
+      "reason": "Projektprofil aus Annahmen (§16 Schritt 1)."
+    },
+    {
+      "id": "audit-0002",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "project_profile",
+      "targetId": "profile-brochure-site",
+      "reason": "Projektprofil aus Annahmen (§16 Schritt 1)."
+    },
+    {
+      "id": "audit-0003",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "source_record",
+      "targetId": "src-bfsg-eu-dir-2019-882"
+    },
+    {
+      "id": "audit-0004",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "source_record",
+      "targetId": "src-bfsg-bgbl-2021-2970"
+    },
+    {
+      "id": "audit-0005",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "source_record",
+      "targetId": "src-eu-ai-act-reg-2024-1689"
+    },
+    {
+      "id": "audit-0006",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "source_record",
+      "targetId": "src-eu-data-act-reg-2023-2854"
+    },
+    {
+      "id": "audit-0007",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_act",
+      "targetId": "act-bfsg",
+      "sourceReferenceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ]
+    },
+    {
+      "id": "audit-0008",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_act",
+      "targetId": "act-eu-ai-act",
+      "sourceReferenceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ]
+    },
+    {
+      "id": "audit-0009",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_act",
+      "targetId": "act-eu-data-act",
+      "sourceReferenceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ]
+    },
+    {
+      "id": "audit-0010",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-bfsg-accessibility-statement",
+      "sourceReferenceIds": [
+        "src-bfsg-bgbl-2021-2970"
+      ]
+    },
+    {
+      "id": "audit-0011",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-bfsg-wcag-conformance",
+      "sourceReferenceIds": [
+        "src-bfsg-bgbl-2021-2970",
+        "src-bfsg-eu-dir-2019-882"
+      ]
+    },
+    {
+      "id": "audit-0012",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-bfsg-feedback-channel",
+      "sourceReferenceIds": [
+        "src-bfsg-eu-dir-2019-882"
+      ]
+    },
+    {
+      "id": "audit-0013",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-ai-act-interaction-disclosure",
+      "sourceReferenceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ]
+    },
+    {
+      "id": "audit-0014",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-ai-act-synthetic-content",
+      "sourceReferenceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ]
+    },
+    {
+      "id": "audit-0015",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-ai-act-system-inventory",
+      "sourceReferenceIds": [
+        "src-eu-ai-act-reg-2024-1689"
+      ]
+    },
+    {
+      "id": "audit-0016",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-data-act-transparency-information",
+      "sourceReferenceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ]
+    },
+    {
+      "id": "audit-0017",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-data-act-access-portability",
+      "sourceReferenceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ]
+    },
+    {
+      "id": "audit-0018",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "obligation",
+      "targetId": "obl-data-act-third-party-sharing",
+      "sourceReferenceIds": [
+        "src-eu-data-act-reg-2023-2854"
+      ]
+    },
+    {
+      "id": "audit-0019",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-bfsg-statement-slot"
+    },
+    {
+      "id": "audit-0020",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-bfsg-a11y-structure"
+    },
+    {
+      "id": "audit-0021",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-bfsg-a11y-test-setup"
+    },
+    {
+      "id": "audit-0022",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-bfsg-media-alternatives"
+    },
+    {
+      "id": "audit-0023",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-bfsg-feedback-channel"
+    },
+    {
+      "id": "audit-0024",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-ai-act-disclosure-slot"
+    },
+    {
+      "id": "audit-0025",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-ai-act-pre-interaction-notice"
+    },
+    {
+      "id": "audit-0026",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-ai-act-content-marking"
+    },
+    {
+      "id": "audit-0027",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-ai-act-system-inventory"
+    },
+    {
+      "id": "audit-0028",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-ai-act-interaction-log"
+    },
+    {
+      "id": "audit-0029",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-data-act-transparency-slot"
+    },
+    {
+      "id": "audit-0030",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-data-act-dataflow-documentation"
+    },
+    {
+      "id": "audit-0031",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-data-act-access-export"
+    },
+    {
+      "id": "audit-0032",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "control",
+      "targetId": "ctl-data-act-sharing-register"
+    },
+    {
+      "id": "audit-0033",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-bfsg-statement-slot"
+    },
+    {
+      "id": "audit-0034",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-bfsg-a11y-structure"
+    },
+    {
+      "id": "audit-0035",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-bfsg-a11y-tests"
+    },
+    {
+      "id": "audit-0036",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-bfsg-media-alternatives"
+    },
+    {
+      "id": "audit-0037",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-bfsg-feedback-channel"
+    },
+    {
+      "id": "audit-0038",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-ai-disclosure-slot"
+    },
+    {
+      "id": "audit-0039",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-ai-pre-interaction-notice"
+    },
+    {
+      "id": "audit-0040",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-ai-content-marking"
+    },
+    {
+      "id": "audit-0041",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-ai-system-inventory"
+    },
+    {
+      "id": "audit-0042",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-ai-interaction-log"
+    },
+    {
+      "id": "audit-0043",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-data-transparency-slot"
+    },
+    {
+      "id": "audit-0044",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-data-flow-documentation"
+    },
+    {
+      "id": "audit-0045",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-data-access-export"
+    },
+    {
+      "id": "audit-0046",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "task",
+      "targetId": "task-data-sharing-register"
+    },
+    {
+      "id": "audit-0047",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_text_slot",
+      "targetId": "slot-bfsg-accessibility-statement"
+    },
+    {
+      "id": "audit-0048",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_text_slot",
+      "targetId": "slot-eu-ai-act-disclosure-notice"
+    },
+    {
+      "id": "audit-0049",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_text_slot",
+      "targetId": "slot-eu-ai-act-synthetic-content-notice"
+    },
+    {
+      "id": "audit-0050",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "legal_text_slot",
+      "targetId": "slot-eu-data-act-transparency-notice"
+    },
+    {
+      "id": "audit-0051",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "evidence",
+      "targetId": "ev-bfsg-axe-baseline"
+    },
+    {
+      "id": "audit-0052",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "evidence",
+      "targetId": "ev-ai-inventory-draft"
+    },
+    {
+      "id": "audit-0053",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-bfsg-profile-demo-shop-2026-08-01",
+      "reason": "Erstbewertung BFSG für den Demo-Shop."
+    },
+    {
+      "id": "audit-0054",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-bfsg-profile-demo-shop-2026-09-16",
+      "reason": "Neubewertung nach Gegenprüfung der Quellenlage (§6.6 Aktualitätsregel)."
+    },
+    {
+      "id": "audit-0055",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "update",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-bfsg-profile-demo-shop-2026-08-01",
+      "reason": "Neubewertung nach Gegenprüfung der Quellenlage (§6.6 Aktualitätsregel)."
+    },
+    {
+      "id": "audit-0056",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-eu_ai_act-profile-demo-shop-2026-09-16",
+      "reason": "Bewertung EU_AI_ACT gegen Profil profile-demo-shop (§8)."
+    },
+    {
+      "id": "audit-0057",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-eu_data_act-profile-demo-shop-2026-09-16",
+      "reason": "Bewertung EU_DATA_ACT gegen Profil profile-demo-shop (§8)."
+    },
+    {
+      "id": "audit-0058",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-bfsg-profile-brochure-site-2026-09-16",
+      "reason": "Bewertung BFSG gegen Profil profile-brochure-site (§8)."
+    },
+    {
+      "id": "audit-0059",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-eu_ai_act-profile-brochure-site-2026-09-16",
+      "reason": "Bewertung EU_AI_ACT gegen Profil profile-brochure-site (§8)."
+    },
+    {
+      "id": "audit-0060",
+      "timestamp": "2026-09-16T09:00:00.000Z",
+      "actor": "agent",
+      "action": "create",
+      "targetType": "applicability_assessment",
+      "targetId": "asmt-eu_data_act-profile-brochure-site-2026-09-16",
+      "reason": "Bewertung EU_DATA_ACT gegen Profil profile-brochure-site (§8)."
+    }
+  ],
+  "projectProfiles": [
+    {
+      "id": "profile-demo-shop",
+      "name": "Demo Online-Shop (transaktional, KI-Assistent)",
+      "jurisdiction": "DE+EU",
+      "isECommerce": true,
+      "hasUserAccounts": true,
+      "hasAiChatbot": true,
+      "hasAiGeneratedContent": true,
+      "hasAutomatedDecisions": false,
+      "hasIotConnection": false,
+      "hasUserGeneratedData": true,
+      "hasThirdPartyDataSharing": true,
+      "hasAnalytics": true,
+      "hasNewsletter": true,
+      "hasPayment": true,
+      "hasMarketplaceFeatures": false,
+      "hasAccessibilityRelevantService": true,
+      "accessibilityRelevance": "high"
+    },
+    {
+      "id": "profile-brochure-site",
+      "name": "Informationswebsite ohne Transaktion",
+      "jurisdiction": "DE",
+      "isECommerce": false,
+      "hasUserAccounts": false,
+      "hasAiChatbot": false,
+      "hasAiGeneratedContent": false,
+      "hasAutomatedDecisions": false,
+      "hasIotConnection": false,
+      "hasUserGeneratedData": false,
+      "hasThirdPartyDataSharing": false,
+      "hasAnalytics": false,
+      "hasNewsletter": false,
+      "hasPayment": false,
+      "hasMarketplaceFeatures": false,
+      "hasAccessibilityRelevantService": false,
+      "accessibilityRelevance": "unknown"
+    }
+  ],
+  "applicabilityAssessments": [
+    {
+      "id": "asmt-bfsg-profile-demo-shop-2026-08-01",
+      "legalActId": "act-bfsg",
+      "projectProfileId": "profile-demo-shop",
+      "applicable": true,
+      "confidence": "high",
+      "reasons": [
+        "Dienstleistungs-/E-Commerce-Relevanz im Profil: isECommerce, hasAccessibilityRelevantService, hasPayment.",
+        "accessibilityRelevance = \"high\"."
+      ],
+      "needsLegalReview": false,
+      "assessedAt": "2026-08-01T09:00:00.000Z",
+      "supersededBy": "asmt-bfsg-profile-demo-shop-2026-09-16"
+    },
+    {
+      "id": "asmt-bfsg-profile-demo-shop-2026-09-16",
+      "legalActId": "act-bfsg",
+      "projectProfileId": "profile-demo-shop",
+      "applicable": true,
+      "confidence": "high",
+      "reasons": [
+        "Dienstleistungs-/E-Commerce-Relevanz im Profil: isECommerce, hasAccessibilityRelevantService, hasPayment.",
+        "accessibilityRelevance = \"high\"."
+      ],
+      "needsLegalReview": false,
+      "assessedAt": "2026-09-16T09:00:00.000Z"
+    },
+    {
+      "id": "asmt-eu_ai_act-profile-demo-shop-2026-09-16",
+      "legalActId": "act-eu-ai-act",
+      "projectProfileId": "profile-demo-shop",
+      "applicable": true,
+      "confidence": "high",
+      "reasons": [
+        "KI-Funktion im Profil ausgewiesen: hasAiChatbot, hasAiGeneratedContent.",
+        "Transparenzpflichten für KI-Interaktion und synthetische Inhalte sind einschlägig."
+      ],
+      "needsLegalReview": false,
+      "assessedAt": "2026-09-16T09:00:00.000Z"
+    },
+    {
+      "id": "asmt-eu_data_act-profile-demo-shop-2026-09-16",
+      "legalActId": "act-eu-data-act",
+      "projectProfileId": "profile-demo-shop",
+      "applicable": true,
+      "confidence": "medium",
+      "reasons": [
+        "Datensignale ohne IoT-Bezug: hasUserGeneratedData, hasThirdPartyDataSharing.",
+        "Reichweite der Data-Act-Pflichten ohne vernetztes Produkt ist auslegungsbedürftig (§8.3 Regel 4)."
+      ],
+      "needsLegalReview": true,
+      "assessedAt": "2026-09-16T09:00:00.000Z"
+    },
+    {
+      "id": "asmt-bfsg-profile-brochure-site-2026-09-16",
+      "legalActId": "act-bfsg",
+      "projectProfileId": "profile-brochure-site",
+      "applicable": true,
+      "confidence": "low",
+      "reasons": [
+        "Prüfgegenstand (§8.3): Profil weist weder E-Commerce- noch digitale Dienstleistungsrelevanz aus; BFSG-Anwendbarkeit ist damit nicht automatisch gegeben, aber auch nicht ausgeschlossen (Regel 2).",
+        "Vorläufige Arbeitsannahme applicable:true bei confidence:low — rechtliche Prüfung erforderlich."
+      ],
+      "needsLegalReview": true,
+      "assessedAt": "2026-09-16T09:00:00.000Z"
+    },
+    {
+      "id": "asmt-eu_ai_act-profile-brochure-site-2026-09-16",
+      "legalActId": "act-eu-ai-act",
+      "projectProfileId": "profile-brochure-site",
+      "applicable": false,
+      "confidence": "high",
+      "reasons": [
+        "Profil weist keine KI-Funktion aus (hasAiChatbot, hasAiGeneratedContent, hasAutomatedDecisions sind alle false) — es darf keine AI-Act-Pflicht als anwendbar markiert werden (§8.3 Regel 1)."
+      ],
+      "needsLegalReview": false,
+      "assessedAt": "2026-09-16T09:00:00.000Z"
+    },
+    {
+      "id": "asmt-eu_data_act-profile-brochure-site-2026-09-16",
+      "legalActId": "act-eu-data-act",
+      "projectProfileId": "profile-brochure-site",
+      "applicable": true,
+      "confidence": "low",
+      "reasons": [
+        "Prüfgegenstand (§8.3): Profil weist weder IoT-, Nutzerdaten- noch Datenzugriffsrelevanz aus; Data-Act-Anwendbarkeit ist damit nicht automatisch gegeben, aber auch nicht ausgeschlossen (Regel 3).",
+        "Vorläufige Arbeitsannahme applicable:true bei confidence:low — rechtliche Prüfung erforderlich."
+      ],
+      "needsLegalReview": true,
+      "assessedAt": "2026-09-16T09:00:00.000Z"
+    }
+  ],
+  "roadmapItems": [
+    {
+      "id": "rm-profile-demo-shop-obl-bfsg-accessibility-statement-ctl-bfsg-statement-slot",
+      "legalActId": "act-bfsg",
+      "obligationId": "obl-bfsg-accessibility-statement",
+      "complianceControlId": "ctl-bfsg-statement-slot",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtstext über Generator, Kanzlei oder offizielle Quelle beschaffen und freigeben; Slot bfsg.accessibility_statement bleibt bis zur Freigabe Platzhalter (§12.1–§12.4).",
+      "architecturePreparationRequired": false,
+      "legalTextUpdateRequired": true,
+      "legalReviewRequired": false,
+      "deadlineHint": "2025-06-28",
+      "dependencies": [
+        "control:ctl-bfsg-statement-slot",
+        "legal_text_slot:slot-bfsg-accessibility-statement"
+      ],
+      "blockers": [
+        "Rechtstext-Slot nicht freigabekonform: bfsg.accessibility_statement (§12.3).",
+        "Nachweis für Pflicht obl-bfsg-accessibility-statement liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-bfsg-feedback-channel-ctl-bfsg-feedback-channel",
+      "legalActId": "act-bfsg",
+      "obligationId": "obl-bfsg-feedback-channel",
+      "complianceControlId": "ctl-bfsg-feedback-channel",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2025-06-28",
+      "dependencies": [
+        "control:ctl-bfsg-feedback-channel"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-bfsg-feedback-channel liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-bfsg-wcag-conformance",
+      "legalActId": "act-bfsg",
+      "obligationId": "obl-bfsg-wcag-conformance",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": false,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2025-06-28",
+      "dependencies": [
+        "control:ctl-bfsg-a11y-structure",
+        "control:ctl-bfsg-a11y-test-setup"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-bfsg-wcag-conformance liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-bfsg-wcag-conformance-ctl-bfsg-media-alternatives",
+      "legalActId": "act-bfsg",
+      "obligationId": "obl-bfsg-wcag-conformance",
+      "complianceControlId": "ctl-bfsg-media-alternatives",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2025-06-28",
+      "dependencies": [
+        "control:ctl-bfsg-media-alternatives"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-bfsg-wcag-conformance liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-ai-act-interaction-disclosure",
+      "legalActId": "act-eu-ai-act",
+      "obligationId": "obl-ai-act-interaction-disclosure",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtstext über Generator, Kanzlei oder offizielle Quelle beschaffen und freigeben; Slot eu_ai_act.disclosure_notice bleibt bis zur Freigabe Platzhalter (§12.1–§12.4).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": true,
+      "legalReviewRequired": false,
+      "deadlineHint": "2026-08-02",
+      "dependencies": [
+        "control:ctl-ai-act-disclosure-slot",
+        "legal_text_slot:slot-eu-ai-act-disclosure-notice",
+        "control:ctl-ai-act-pre-interaction-notice"
+      ],
+      "blockers": [
+        "Rechtstext-Slot nicht freigabekonform: eu_ai_act.disclosure_notice (§12.3).",
+        "Nachweis für Pflicht obl-ai-act-interaction-disclosure liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-ai-act-synthetic-content-ctl-ai-act-content-marking",
+      "legalActId": "act-eu-ai-act",
+      "obligationId": "obl-ai-act-synthetic-content",
+      "complianceControlId": "ctl-ai-act-content-marking",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtstext über Generator, Kanzlei oder offizielle Quelle beschaffen und freigeben; Slot eu_ai_act.synthetic_content_notice bleibt bis zur Freigabe Platzhalter (§12.1–§12.4).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": true,
+      "legalReviewRequired": false,
+      "deadlineHint": "2026-08-02",
+      "dependencies": [
+        "control:ctl-ai-act-content-marking",
+        "legal_text_slot:slot-eu-ai-act-synthetic-content-notice"
+      ],
+      "blockers": [
+        "Rechtstext-Slot nicht freigabekonform: eu_ai_act.synthetic_content_notice (§12.3).",
+        "Nachweis für Pflicht obl-ai-act-synthetic-content liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-ai-act-system-inventory-ctl-ai-act-interaction-log",
+      "legalActId": "act-eu-ai-act",
+      "obligationId": "obl-ai-act-system-inventory",
+      "complianceControlId": "ctl-ai-act-interaction-log",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2026-08-02",
+      "dependencies": [
+        "control:ctl-ai-act-interaction-log"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-ai-act-system-inventory liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-ai-act-system-inventory-ctl-ai-act-system-inventory",
+      "legalActId": "act-eu-ai-act",
+      "obligationId": "obl-ai-act-system-inventory",
+      "complianceControlId": "ctl-ai-act-system-inventory",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "applicable",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": false,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2026-08-02",
+      "dependencies": [
+        "control:ctl-ai-act-system-inventory"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-ai-act-system-inventory liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-data-act-access-portability-ctl-data-act-access-export",
+      "legalActId": "act-eu-data-act",
+      "obligationId": "obl-data-act-access-portability",
+      "complianceControlId": "ctl-data-act-access-export",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "needs_legal_review",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2026-09-12",
+      "dependencies": [
+        "control:ctl-data-act-access-export"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-data-act-access-portability liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-data-act-third-party-sharing-ctl-data-act-sharing-register",
+      "legalActId": "act-eu-data-act",
+      "obligationId": "obl-data-act-third-party-sharing",
+      "complianceControlId": "ctl-data-act-sharing-register",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "needs_legal_review",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": true,
+      "legalTextUpdateRequired": false,
+      "legalReviewRequired": true,
+      "deadlineHint": "2026-09-12",
+      "dependencies": [
+        "control:ctl-data-act-sharing-register"
+      ],
+      "blockers": [
+        "Kontrolle ctl-data-act-sharing-register (\"Register der Third-Party-Datenweitergaben\") ist blockiert (§7.4).",
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Nachweis für Pflicht obl-data-act-third-party-sharing liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-data-act-transparency-information-ctl-data-act-dataflow-documentation",
+      "legalActId": "act-eu-data-act",
+      "obligationId": "obl-data-act-transparency-information",
+      "complianceControlId": "ctl-data-act-dataflow-documentation",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "needs_legal_review",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": false,
+      "legalTextUpdateRequired": true,
+      "legalReviewRequired": true,
+      "deadlineHint": "2026-09-12",
+      "dependencies": [
+        "control:ctl-data-act-dataflow-documentation"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Rechtstext-Slot nicht freigabekonform: eu_data_act.transparency_notice (§12.3).",
+        "Nachweis für Pflicht obl-data-act-transparency-information liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    },
+    {
+      "id": "rm-profile-demo-shop-obl-data-act-transparency-information-ctl-data-act-transparency-slot",
+      "legalActId": "act-eu-data-act",
+      "obligationId": "obl-data-act-transparency-information",
+      "complianceControlId": "ctl-data-act-transparency-slot",
+      "projectProfileId": "profile-demo-shop",
+      "applicability": "needs_legal_review",
+      "lifecycleState": "applicable",
+      "priority": "critical",
+      "recommendedAction": "Rechtliche Prüfung einholen und Ergebnis als ApplicabilityAssessment nachführen. Bis zur Freigabe darf keine finale Pflicht behauptet und kein finaler Rechtstext eingebunden werden (§9.4.3).",
+      "architecturePreparationRequired": false,
+      "legalTextUpdateRequired": true,
+      "legalReviewRequired": true,
+      "deadlineHint": "2026-09-12",
+      "dependencies": [
+        "control:ctl-data-act-transparency-slot",
+        "legal_text_slot:slot-eu-data-act-transparency-notice"
+      ],
+      "blockers": [
+        "Rechtliche Prüfung offen — keine finale Pflichtaussage zulässig (§9.4.3).",
+        "Rechtstext-Slot nicht freigabekonform: eu_data_act.transparency_notice (§12.3).",
+        "Nachweis für Pflicht obl-data-act-transparency-information liegt nicht freigegeben vor (§4.7, §7.2.5)."
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "id": "checklist-bfsg-profile-demo-shop",
+      "legalActId": "act-bfsg",
+      "legalActSlug": "BFSG",
+      "projectProfileId": "profile-demo-shop",
+      "title": "BFSG Checklist",
+      "items": [
+        {
+          "id": "checklist-bfsg-profile-demo-shop-layout-structure",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Accessibility-Struktur im Layout vorhanden",
+          "description": "Landmarks, semantische Struktur und Skip-Links sind im Layout angelegt.",
+          "category": "accessibility",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-footer-slot",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Footer-Slot für AccessibilityStatement vorhanden",
+          "category": "architecture",
+          "state": "prepared",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-feedback-mechanism",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Feedback- oder Kontaktmechanismus vorbereitet",
+          "category": "accessibility",
+          "state": "not_started",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-alternative-access",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Alternativzugänge berücksichtigt",
+          "description": "Alternative Zugangswege zu Kernfunktionen sind konzipiert und dokumentiert.",
+          "category": "accessibility",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-contrast",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Farbkontraste prüfbar",
+          "category": "testing",
+          "state": "prepared",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-keyboard",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Tastaturbedienung prüfbar",
+          "category": "testing",
+          "state": "prepared",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-form-labels",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Formular-Labels vorhanden",
+          "category": "accessibility",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-focus-states",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Fokus-States vorhanden",
+          "category": "accessibility",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-heading-structure",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Semantische Überschriftenstruktur vorhanden",
+          "category": "accessibility",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-media-alternatives",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Media-Alternativen vorbereitet",
+          "description": "Untertitel, Transkripte und Textalternativen sind als Struktur vorgesehen.",
+          "category": "content",
+          "state": "not_started",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-test-setup",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Accessibility-Test-Setup vorhanden",
+          "category": "testing",
+          "state": "prepared",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-bfsg-profile-demo-shop-slot-not-selffilled",
+          "checklistId": "checklist-bfsg-profile-demo-shop",
+          "regulationId": "act-bfsg",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Rechtstext-Slot nicht eigenmächtig befüllt",
+          "description": "Der Slot ist leer oder trägt einen freigegebenen Text aus Generator, Kanzlei, offizieller Quelle oder interner Freigabe (§12.1–§12.3).",
+          "category": "content",
+          "state": "not_started",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": true
+        }
+      ]
+    },
+    {
+      "id": "checklist-eu_ai_act-profile-demo-shop",
+      "legalActId": "act-eu-ai-act",
+      "legalActSlug": "EU_AI_ACT",
+      "projectProfileId": "profile-demo-shop",
+      "title": "AI Act Checklist",
+      "items": [
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-ai-inventory",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "KI-Funktion inventarisiert",
+          "category": "documentation",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-profile-flags",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "KI-Einsatz im Projektprofil erfasst",
+          "description": "hasAiChatbot / hasAiGeneratedContent / hasAutomatedDecisions sind gepflegt.",
+          "category": "documentation",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": false,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-chatbot-labelling",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Chatbot-Kennzeichnung vorbereitet",
+          "category": "ai_transparency",
+          "state": "not_started",
+          "requiresLegalText": true,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-synthetic-content",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Hinweis auf synthetische Inhalte vorbereitet",
+          "category": "ai_transparency",
+          "state": "not_started",
+          "requiresLegalText": true,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-contextual-disclosure",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Kontextuelle Disclosure-Komponente vorbereitet",
+          "category": "ai_transparency",
+          "state": "prepared",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-system-description-slot",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Systembeschreibung als Slot vorhanden",
+          "category": "architecture",
+          "state": "prepared",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-pre-interaction-notice",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Nutzerhinweis vor Interaktion vorbereitet",
+          "category": "ai_transparency",
+          "state": "not_started",
+          "requiresLegalText": true,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-logging",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Logging- oder Nachweisstruktur vorbereitet",
+          "category": "documentation",
+          "state": "not_started",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": false
+        },
+        {
+          "id": "checklist-eu_ai_act-profile-demo-shop-slot-not-selffilled",
+          "checklistId": "checklist-eu_ai_act-profile-demo-shop",
+          "regulationId": "act-eu-ai-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Rechtstext-Slot nicht eigenmächtig befüllt",
+          "category": "content",
+          "state": "not_started",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": true
+        }
+      ]
+    },
+    {
+      "id": "checklist-eu_data_act-profile-demo-shop",
+      "legalActId": "act-eu-data-act",
+      "legalActSlug": "EU_DATA_ACT",
+      "projectProfileId": "profile-demo-shop",
+      "title": "Data Act Checklist",
+      "items": [
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-data-categories",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Relevante Datenkategorien identifiziert",
+          "category": "data_transparency",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-iot-scope",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "IoT-Bezug geprüft",
+          "category": "data_transparency",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-user-data-scope",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Nutzerdaten-Bezug geprüft",
+          "category": "data_transparency",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-access-duties",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Datenzugriffspflichten geprüft",
+          "category": "data_transparency",
+          "state": "not_started",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-transparency-notice",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Transparenzhinweise vorbereitet",
+          "category": "data_transparency",
+          "state": "prepared",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-portability",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Datenportabilität geprüft",
+          "category": "architecture",
+          "state": "not_started",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-third-party-sharing",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Third-Party-Sharing geprüft",
+          "category": "data_transparency",
+          "state": "blocked",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-dataflow-docs",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Dokumentation der Datenflüsse vorbereitet",
+          "category": "documentation",
+          "state": "in_progress",
+          "requiresLegalText": false,
+          "requiresEvidence": true,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-slot-not-selffilled",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Rechtstext-Slot nicht eigenmächtig befüllt",
+          "category": "content",
+          "state": "not_started",
+          "requiresLegalText": true,
+          "requiresEvidence": false,
+          "needsLegalReview": true
+        },
+        {
+          "id": "checklist-eu_data_act-profile-demo-shop-uncertainty-flag",
+          "checklistId": "checklist-eu_data_act-profile-demo-shop",
+          "regulationId": "act-eu-data-act",
+          "projectProfileId": "profile-demo-shop",
+          "title": "Needs-Legal-Review-Flag bei Unsicherheit gesetzt",
+          "description": "Bei confidence:\"low\" muss das gültige ApplicabilityAssessment needsLegalReview:true tragen (§8.3 Regel 4/5).",
+          "category": "legal_review",
+          "state": "done",
+          "requiresLegalText": false,
+          "requiresEvidence": false,
+          "needsLegalReview": true
+        }
+      ]
+    }
+  ]
+}
